@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A12C5C212CB5F18B0003B05F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A12C5C202CB5F1890003B05F /* GoogleService-Info.plist */; };
+		A12C5C2C2CB8806F0003B05F /* AddCartaoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C5C2B2CB8806F0003B05F /* AddCartaoView.swift */; };
+		A12C5C2E2CB8809C0003B05F /* AddCartaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C5C2D2CB8809C0003B05F /* AddCartaoViewController.swift */; };
+		A12C5C302CB880D90003B05F /* AddCartaoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C5C2F2CB880D90003B05F /* AddCartaoViewModel.swift */; };
+		A12C5C322CB8811E0003B05F /* AddCompraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C5C312CB8811E0003B05F /* AddCompraView.swift */; };
+		A12C5C342CB8812F0003B05F /* AddCompraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C5C332CB8812F0003B05F /* AddCompraViewController.swift */; };
+		A12C5C362CB881400003B05F /* AddCompraViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C5C352CB881400003B05F /* AddCompraViewModel.swift */; };
+		A12C5C382CB8815B0003B05F /* PerfilView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C5C372CB8815A0003B05F /* PerfilView.swift */; };
+		A12C5C3A2CB8816A0003B05F /* PerfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C5C392CB8816A0003B05F /* PerfilViewController.swift */; };
+		A12C5C3C2CB881A10003B05F /* PerfilViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12C5C3B2CB881A10003B05F /* PerfilViewModel.swift */; };
 		A1504E832CA4DBEC009776A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1504E822CA4DBEC009776A3 /* AppDelegate.swift */; };
 		A1504E8C2CA4DBF1009776A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1504E8B2CA4DBF1009776A3 /* Assets.xcassets */; };
 		A1504E8F2CA4DBF1009776A3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1504E8D2CA4DBF1009776A3 /* LaunchScreen.storyboard */; };
@@ -50,6 +60,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A12C5C202CB5F1890003B05F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A12C5C2B2CB8806F0003B05F /* AddCartaoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCartaoView.swift; sourceTree = "<group>"; };
+		A12C5C2D2CB8809C0003B05F /* AddCartaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCartaoViewController.swift; sourceTree = "<group>"; };
+		A12C5C2F2CB880D90003B05F /* AddCartaoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCartaoViewModel.swift; sourceTree = "<group>"; };
+		A12C5C312CB8811E0003B05F /* AddCompraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompraView.swift; sourceTree = "<group>"; };
+		A12C5C332CB8812F0003B05F /* AddCompraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompraViewController.swift; sourceTree = "<group>"; };
+		A12C5C352CB881400003B05F /* AddCompraViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCompraViewModel.swift; sourceTree = "<group>"; };
+		A12C5C372CB8815A0003B05F /* PerfilView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilView.swift; sourceTree = "<group>"; };
+		A12C5C392CB8816A0003B05F /* PerfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewController.swift; sourceTree = "<group>"; };
+		A12C5C3B2CB881A10003B05F /* PerfilViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfilViewModel.swift; sourceTree = "<group>"; };
 		A1504E7F2CA4DBEC009776A3 /* helpFinance.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = helpFinance.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1504E822CA4DBEC009776A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1504E8B2CA4DBF1009776A3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,6 +124,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A12C5C222CB87E450003B05F /* Perfil */ = {
+			isa = PBXGroup;
+			children = (
+				A12C5C252CB87E7C0003B05F /* View */,
+				A12C5C262CB87E860003B05F /* ViewModel */,
+			);
+			path = Perfil;
+			sourceTree = "<group>";
+		};
+		A12C5C232CB87E550003B05F /* AddCartao */ = {
+			isa = PBXGroup;
+			children = (
+				A12C5C282CB87EBE0003B05F /* View */,
+				A12C5C272CB87EB40003B05F /* ViewModel */,
+			);
+			path = AddCartao;
+			sourceTree = "<group>";
+		};
+		A12C5C242CB87E640003B05F /* AddCompra */ = {
+			isa = PBXGroup;
+			children = (
+				A12C5C2A2CB87ECE0003B05F /* View */,
+				A12C5C292CB87EC60003B05F /* ViewModel */,
+			);
+			path = AddCompra;
+			sourceTree = "<group>";
+		};
+		A12C5C252CB87E7C0003B05F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A12C5C372CB8815A0003B05F /* PerfilView.swift */,
+				A12C5C392CB8816A0003B05F /* PerfilViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A12C5C262CB87E860003B05F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A12C5C3B2CB881A10003B05F /* PerfilViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A12C5C272CB87EB40003B05F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A12C5C2F2CB880D90003B05F /* AddCartaoViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A12C5C282CB87EBE0003B05F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A12C5C2B2CB8806F0003B05F /* AddCartaoView.swift */,
+				A12C5C2D2CB8809C0003B05F /* AddCartaoViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A12C5C292CB87EC60003B05F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A12C5C352CB881400003B05F /* AddCompraViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A12C5C2A2CB87ECE0003B05F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A12C5C312CB8811E0003B05F /* AddCompraView.swift */,
+				A12C5C332CB8812F0003B05F /* AddCompraViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		A1504E762CA4DBEC009776A3 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +230,7 @@
 				CF00C1B12CB010C600CCA40E /* UI */,
 				A1504E822CA4DBEC009776A3 /* AppDelegate.swift */,
 				A1504E8B2CA4DBF1009776A3 /* Assets.xcassets */,
+				A12C5C202CB5F1890003B05F /* GoogleService-Info.plist */,
 				A1504E902CA4DBF1009776A3 /* Info.plist */,
 				A1504E8D2CA4DBF1009776A3 /* LaunchScreen.storyboard */,
 			);
@@ -176,6 +275,9 @@
 		CF00C1A62CB0100500CCA40E /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				A12C5C242CB87E640003B05F /* AddCompra */,
+				A12C5C232CB87E550003B05F /* AddCartao */,
+				A12C5C222CB87E450003B05F /* Perfil */,
 				A1504EBE2CA61F5B009776A3 /* Home */,
 				A1504EBD2CA61F40009776A3 /* LogIn */,
 			);
@@ -369,6 +471,7 @@
 			files = (
 				A1504E8F2CA4DBF1009776A3 /* LaunchScreen.storyboard in Resources */,
 				A1504E8C2CA4DBF1009776A3 /* Assets.xcassets in Resources */,
+				A12C5C212CB5F18B0003B05F /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,13 +496,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12C5C2C2CB8806F0003B05F /* AddCartaoView.swift in Sources */,
+				A12C5C302CB880D90003B05F /* AddCartaoViewModel.swift in Sources */,
 				CF00C1AC2CB0107000CCA40E /* LoginViewModel.swift in Sources */,
+				A12C5C2E2CB8809C0003B05F /* AddCartaoViewController.swift in Sources */,
 				A1504EBC2CA61F35009776A3 /* HomeViewController.swift in Sources */,
 				CF00C1AE2CB0108E00CCA40E /* HomeViewModel.swift in Sources */,
+				A12C5C3A2CB8816A0003B05F /* PerfilViewController.swift in Sources */,
 				A1504EB32CA60EA9009776A3 /* LogInViewController.swift in Sources */,
+				A12C5C382CB8815B0003B05F /* PerfilView.swift in Sources */,
 				A1504EB92CA61F10009776A3 /* HomeView.swift in Sources */,
+				A12C5C362CB881400003B05F /* AddCompraViewModel.swift in Sources */,
+				A12C5C322CB8811E0003B05F /* AddCompraView.swift in Sources */,
 				A1504E832CA4DBEC009776A3 /* AppDelegate.swift in Sources */,
 				A1504EB72CA60F98009776A3 /* LogInView.swift in Sources */,
+				A12C5C342CB8812F0003B05F /* AddCompraViewController.swift in Sources */,
+				A12C5C3C2CB881A10003B05F /* PerfilViewModel.swift in Sources */,
 				CF00C1B42CB010E700CCA40E /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

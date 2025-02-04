@@ -1,14 +1,14 @@
 //
-//  HomeViewController.swift
+//  AddCartaoViewController.swift
 //  helpFinance
 //
-//  Created by João Vitor Duarte Mariucio on 26/09/24.
+//  Created by João Vitor Duarte Mariucio on 10/10/24.
 //
 
 import Foundation
 import UIKit
 
-class HomeViewController: UIViewController {
+class AddCartaoViewController: UIViewController {
     
     override func loadView() {
         view = mainView
@@ -19,5 +19,5 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    let mainView = HomeView()
+    let mainView = AddCartaoView()
 }
