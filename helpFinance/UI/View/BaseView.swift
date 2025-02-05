@@ -8,7 +8,6 @@
 import UIKit
 
 class BaseView: UIView {
-
     // MARK: Lifecycle
 
     override init(frame: CGRect) {

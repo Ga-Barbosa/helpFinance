@@ -7,6 +7,4 @@
 
 import Foundation
 
-class AddCompraViewModel {
-    
-}
+class AddCompraViewModel {}

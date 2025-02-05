@@ -5,6 +5,4 @@
 //  Created by Joao Duarte on 04/10/24.
 //
 
-class HomeViewModel {
-    
-}
+class HomeViewModel {}

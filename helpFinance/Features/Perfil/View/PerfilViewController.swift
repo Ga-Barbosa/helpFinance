@@ -9,15 +9,14 @@ import Foundation
 import UIKit
 
 class PerfilViewController: UIViewController {
-    
     override func loadView() {
         view = mainView
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
+
     let mainView = PerfilView()
 }

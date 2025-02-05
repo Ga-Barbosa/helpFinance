@@ -1,19 +1,17 @@
 //
-//  LoginViewController.swift
+//  LogInViewController.swift
 //  helpFinance
 //
 //  Created by João Vitor Duarte Mariucio on 26/09/24.
 //
 
-import Foundation
-import UIKit
-import FirebaseCore
 import FirebaseAuth
+import FirebaseCore
+import Foundation
 import GoogleSignIn
-
+import UIKit
 
 class LogInViewController: UIViewController {
-    
     override func loadView() {
         view = mainView
     }
@@ -24,7 +22,7 @@ class LogInViewController: UIViewController {
     }
 
     let mainView = LongInView()
-    
+
     func loginWithGoogle() {
         guard let clientID = FirebaseApp.app()?.options.clientID else { return }
 
@@ -34,20 +32,20 @@ class LogInViewController: UIViewController {
 
         // Start the sign in flow!
         GIDSignIn.sharedInstance.signIn(withPresenting: self) { [unowned self] result, error in
-          guard error == nil else {
-            return
-          }
+            guard error == nil else {
+                return
+            }
 
-          guard let user = result?.user,
-            let idToken = user.idToken?.tokenString
-          else {
-            return
-          }
+            guard let user = result?.user,
+                  let idToken = user.idToken?.tokenString
+            else {
+                return
+            }
 
-          let credential = GoogleAuthProvider.credential(withIDToken: idToken,
-                                                         accessToken: user.accessToken.tokenString)
+            let credential = GoogleAuthProvider.credential(withIDToken: idToken,
+                                                           accessToken: user.accessToken.tokenString)
 
-          // ...
+            // ...
         }
     }
 }

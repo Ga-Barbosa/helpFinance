@@ -9,18 +9,11 @@ import Foundation
 import UIKit
 
 class AddCompraView: BaseView {
-    
     class AddCartaoView: BaseView {
-        
-        
-        override func buildHierarchy() {
-            
-        }
-        
-        override func setupConstraints() {
-            
-        }
-        
+        override func buildHierarchy() {}
+
+        override func setupConstraints() {}
+
         override func configureView() {
             backgroundColor = .blue
         }

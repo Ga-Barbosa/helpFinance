@@ -1,16 +1,15 @@
 //
-//  LogIn.swift
+//  LogInView.swift
 //  helpFinance
 //
 //  Created by João Vitor Duarte Mariucio on 26/09/24.
 //
 
 import Foundation
-import UIKit
 import GoogleSignIn
+import UIKit
 
 class LongInView: BaseView {
-
 //    var planoDefundo: UIImageView = {
 //        var img = UIImageView()
 //        img.image = UIImage(named: "back")
@@ -38,9 +37,9 @@ class LongInView: BaseView {
         lbl.layer.masksToBounds = true
         return lbl
     }()
-    
+
     var signInButton: GIDSignInButton = {
-       var btn = GIDSignInButton()
+        var btn = GIDSignInButton()
         btn.translatesAutoresizingMaskIntoConstraints = false
         btn.layer.cornerRadius = 20
         btn.layer.masksToBounds = true
@@ -66,19 +65,19 @@ class LongInView: BaseView {
             gambi.topAnchor.constraint(equalTo: topAnchor, constant: 250),
             gambi.centerXAnchor.constraint(equalTo: centerXAnchor),
             gambi.heightAnchor.constraint(equalToConstant: 50),
-            gambi.widthAnchor.constraint(equalToConstant: 50)
+            gambi.widthAnchor.constraint(equalToConstant: 50),
         ])
 
         NSLayoutConstraint.activate([
             txtWelcome.topAnchor.constraint(equalTo: gambi.bottomAnchor, constant: 10),
-            txtWelcome.centerXAnchor.constraint(equalTo: centerXAnchor)
+            txtWelcome.centerXAnchor.constraint(equalTo: centerXAnchor),
         ])
-        
+
         NSLayoutConstraint.activate([
             signInButton.centerXAnchor.constraint(equalTo: centerXAnchor),
             signInButton.centerYAnchor.constraint(equalTo: centerYAnchor),
-            signInButton.widthAnchor.constraint(equalToConstant: 200)
-          
+            signInButton.widthAnchor.constraint(equalToConstant: 200),
+
         ])
     }
 
