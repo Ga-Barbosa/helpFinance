@@ -28,6 +28,7 @@
 		A1504EB72CA60F98009776A3 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1504EB62CA60F98009776A3 /* LogInView.swift */; };
 		A1504EB92CA61F10009776A3 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1504EB82CA61F10009776A3 /* HomeView.swift */; };
 		A1504EBC2CA61F35009776A3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1504EBB2CA61F35009776A3 /* HomeViewController.swift */; };
+		A1A4CAB32D54382200F4E0C1 /* HomeFloatingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A4CAB22D54382200F4E0C1 /* HomeFloatingButton.swift */; };
 		A1C232542CAE04B4009704A8 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A1C232532CAE04B4009704A8 /* FirebaseAnalytics */; };
 		A1C232562CAE04B4009704A8 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A1C232552CAE04B4009704A8 /* FirebaseAuth */; };
 		A1C232582CAE04B4009704A8 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = A1C232572CAE04B4009704A8 /* FirebaseCrashlytics */; };
@@ -95,6 +96,7 @@
 		A1504EB62CA60F98009776A3 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		A1504EB82CA61F10009776A3 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A1504EBB2CA61F35009776A3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A1A4CAB22D54382200F4E0C1 /* HomeFloatingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFloatingButton.swift; sourceTree = "<group>"; };
 		CF00C1AB2CB0106F00CCA40E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		CF00C1AD2CB0108E00CCA40E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		CF00C1B32CB010E400CCA40E /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -289,6 +291,14 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		A1A4CAB12D5437E700F4E0C1 /* SubViews */ = {
+			isa = PBXGroup;
+			children = (
+				A1A4CAB22D54382200F4E0C1 /* HomeFloatingButton.swift */,
+			);
+			path = SubViews;
+			sourceTree = "<group>";
+		};
 		B825B17A35510DAB61E48A50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -314,6 +324,7 @@
 		CF00C1A72CB0101700CCA40E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A1A4CAB12D5437E700F4E0C1 /* SubViews */,
 				A1504EB82CA61F10009776A3 /* HomeView.swift */,
 				A1504EBB2CA61F35009776A3 /* HomeViewController.swift */,
 			);
@@ -386,7 +397,6 @@
 				D15315FB974A5C7024C28B4D /* Pods-helpFinanceTests.debug.xcconfig */,
 				7E2B9CB047C1E50B2376538A /* Pods-helpFinanceTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -401,6 +411,7 @@
 				A1504E7B2CA4DBEC009776A3 /* Sources */,
 				A1504E7C2CA4DBEC009776A3 /* Frameworks */,
 				A1504E7D2CA4DBEC009776A3 /* Resources */,
+				DE35696363D4294F6E1D5556 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -450,6 +461,7 @@
 				A1504E9B2CA4DBF1009776A3 /* Sources */,
 				A1504E9C2CA4DBF1009776A3 /* Frameworks */,
 				A1504E9D2CA4DBF1009776A3 /* Resources */,
+				956F999B4ED4D4634214748F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -602,6 +614,40 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		956F999B4ED4D4634214748F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helpFinance-helpFinanceUITests/Pods-helpFinance-helpFinanceUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helpFinance-helpFinanceUITests/Pods-helpFinance-helpFinanceUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helpFinance-helpFinanceUITests/Pods-helpFinance-helpFinanceUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE35696363D4294F6E1D5556 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helpFinance/Pods-helpFinance-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-helpFinance/Pods-helpFinance-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-helpFinance/Pods-helpFinance-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -621,6 +667,7 @@
 				A1504EB92CA61F10009776A3 /* HomeView.swift in Sources */,
 				A12C5C362CB881400003B05F /* AddCompraViewModel.swift in Sources */,
 				A12C5C322CB8811E0003B05F /* AddCompraView.swift in Sources */,
+				A1A4CAB32D54382200F4E0C1 /* HomeFloatingButton.swift in Sources */,
 				A1504E832CA4DBEC009776A3 /* AppDelegate.swift in Sources */,
 				A1504EB72CA60F98009776A3 /* LogInView.swift in Sources */,
 				A12C5C342CB8812F0003B05F /* AddCompraViewController.swift in Sources */,
